@@ -69,3 +69,6 @@ extra:
   social:
     - icon: material/email
       link: mailto:support@neocatcher.com
+
+extra_css:
+  - stylesheets/extra.css

@@ -1,0 +1,6 @@
+/* The header and drawer repository widget shows the docs repo's star and fork counts, which say nothing about
+   the product. "Edit this page" links on each page stay. */
+.md-header__source,
+.md-nav__source {
+  display: none;
+}
