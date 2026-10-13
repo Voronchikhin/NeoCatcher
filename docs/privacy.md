@@ -13,7 +13,7 @@ We only receive what you send us yourself, such as support emails.
 
 ## Who we are
 
-[Maxim Voronchikhin / entity name], [address], Republic of Serbia, is the controller of the personal data described
+[Maksim Voronchikhin / entity name], [address], Republic of Serbia, is the controller of the personal data described
 here. Contact: [privacy@neocatcher.com](mailto:privacy@neocatcher.com).
 
 ## The plugin

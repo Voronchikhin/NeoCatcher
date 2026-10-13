@@ -5,7 +5,7 @@ site_url: https://neocatcher.com/
 repo_url: https://github.com/Voronchikhin/NeoCatcher
 repo_name: Voronchikhin/NeoCatcher
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2026 Maxim Voronchikhin
+copyright: Copyright &copy; 2026 Maksim Voronchikhin
 
 theme:
   name: material

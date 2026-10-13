@@ -7,7 +7,7 @@
 
 *Last updated: [date]*
 
-These terms govern your use of the NeoCatcher plugin ("the Software") published by [Maxim Voronchikhin /
+These terms govern your use of the NeoCatcher plugin ("the Software") published by [Maksim Voronchikhin /
 entity name], [address], Republic of Serbia ("we", "us"). By installing or using the Software you agree to them.
 If you buy a license through JetBrains Marketplace, the JetBrains Marketplace terms also apply to the purchase.
 
