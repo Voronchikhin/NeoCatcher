@@ -1,0 +1,7 @@
+# MkDocs output
+site/
+# Local Python environment
+.venv/
+__pycache__/
+# IDE
+.idea/

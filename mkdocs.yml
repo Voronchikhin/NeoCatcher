@@ -1,0 +1,71 @@
+site_name: NeoCatcher
+site_description: HTTP(S) proxy and inspector inside JetBrains IDEs and Android Studio. Capture, mock and pause traffic without leaving your IDE.
+# Served by GitHub Pages from this repo at the custom domain set in Settings → Pages.
+site_url: https://neocatcher.com/
+repo_url: https://github.com/Voronchikhin/NeoCatcher
+repo_name: Voronchikhin/NeoCatcher
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 Maxim Voronchikhin
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Guide:
+      - Getting started: getting-started.md
+      - Device setup: device-setup.md
+      - Request log: request-log.md
+      - Rules: rules.md
+      - Breakpoints: breakpoints.md
+      - AI agents (MCP): mcp.md
+      - Troubleshooting: troubleshooting.md
+  - Security: security.md
+  - Pricing: pricing.md
+  - Changelog: changelog.md
+  - Legal:
+      - Terms of use: terms.md
+      - Privacy notice: privacy.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+extra:
+  social:
+    - icon: material/email
+      link: mailto:support@neocatcher.com
