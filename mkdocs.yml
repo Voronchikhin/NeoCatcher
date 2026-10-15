@@ -9,6 +9,8 @@ copyright: Copyright &copy; 2026 Maksim Voronchikhin
 
 theme:
   name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
   language: en
   features:
     - navigation.sections

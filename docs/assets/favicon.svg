@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <!-- NeoCatcher browser-tab icon: the plugin icon, with dark-theme colors when the browser is dark. -->
+  <style>
+    .a { stop-color: #6E3FD1; } .b { stop-color: #0E9C9C; } .wire { stroke: #8B93A1; } .bar { fill: #FFFFFF; }
+    @media (prefers-color-scheme: dark) {
+      .a { stop-color: #A585F2; } .b { stop-color: #3CC9C4; } .wire { stroke: #9AA1AE; } .bar { fill: #1E1F22; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="nc" x1="4" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" class="a"/>
+      <stop offset="1" class="b"/>
+    </linearGradient>
+  </defs>
+  <path class="wire" d="M3 14H36M33 10.5L36.5 14L33 17.5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="wire" d="M37 26H4M7 22.5L3.5 26L7 29.5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="20" cy="20" r="10.5" fill="url(#nc)"/>
+  <rect class="bar" x="15.8" y="15" width="2.9" height="10" rx="1.25"/>
+  <rect class="bar" x="21.3" y="15" width="2.9" height="10" rx="1.25"/>
+</svg>

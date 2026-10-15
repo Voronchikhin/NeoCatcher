@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <!-- NeoCatcher logo for the site header: white on the colored header bar. -->
+  <path d="M3 14H36M33 10.5L36.5 14L33 17.5" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M37 26H4M7 22.5L3.5 26L7 29.5" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="20" cy="20" r="10.5" fill="#FFFFFF"/>
+  <rect x="15.8" y="15" width="2.9" height="10" rx="1.25" fill="#6E3FD1"/>
+  <rect x="21.3" y="15" width="2.9" height="10" rx="1.25" fill="#0E9C9C"/>
+</svg>
