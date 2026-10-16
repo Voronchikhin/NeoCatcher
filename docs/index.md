@@ -15,8 +15,10 @@ Point your app or emulator at it and every request shows up in a tool window nex
 [Get started](getting-started.md){ .md-button .md-button--primary }
 [Install from JetBrains Marketplace](#){ .md-button }
 
-<!-- TODO: replace with the demo GIF (30–60 s: emulator request → log → rule → breakpoint) -->
-<!-- ![NeoCatcher demo](assets/demo.gif) -->
+<video autoplay loop muted playsinline controls poster="assets/media/easy-setup.png" width="1680" height="1050"
+       aria-label="The Connect a Client wizard sets up an Android emulator in four steps, then the app's HTTPS request appears decrypted in the Request Log">
+  <source src="assets/media/easy-setup.mp4" type="video/mp4">
+</video>
 
 ## Why NeoCatcher
 

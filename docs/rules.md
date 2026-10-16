@@ -19,6 +19,10 @@ The editor has three modes that stay in sync:
 - **YAML** and **JSON** — full source with completion, inline validation and quick documentation
   (uses the IDE's bundled JSON/YAML support).
 
+![The Visual editor: URL conditions on the left, header, body and status modifiers on the right](assets/media/rule-editor-visual.png){ loading=lazy }
+
+![YAML mode with a completion popup offering the body actions replace and set](assets/media/feature-rules.png){ loading=lazy }
+
 Invalid drafts are kept, and errors point to the exact field (`conditions.any[0].all[1] ...`) or YAML line and column.
 Click **Save Changes** to apply.
 

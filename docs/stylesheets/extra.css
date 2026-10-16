@@ -4,3 +4,12 @@
 .md-nav__source {
   display: none;
 }
+
+/* Screenshots and clips: fill the column, soft corners, never overflow on phones. */
+.md-typeset video,
+.md-typeset img[src*="assets/media/"] {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+}

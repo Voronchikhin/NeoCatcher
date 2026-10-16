@@ -14,6 +14,8 @@ Replace `9942` below if you changed the port.
    `local.properties` or the default SDK location, installs the certificate and sets the emulator proxy to
    `10.0.2.2:9942`.
 
+![The wizard's Install the certificate step after a successful run: 135 certificates in the system store](assets/media/device-emulator-cert.png){ loading=lazy }
+
 The system certificate lasts until the emulator cold-boots; run the step again afterwards. When NeoCatcher stops,
 it removes the proxy from the emulator again (you can turn this off in the server settings).
 
@@ -31,6 +33,8 @@ phone at `127.0.0.1:9942`. Manually over Wi-Fi:
 
 Since Android 7, apps ignore user-installed certificates unless they opt in. Add a **debug-only** network security
 config:
+
+![The wizard's Trust in your app step with the debug-only network security config and an Add to Debug Build button](assets/media/device-trust-config.png){ loading=lazy }
 
 ```xml title="app/src/debug/res/xml/network_security_config.xml"
 <network-security-config>

@@ -40,6 +40,8 @@ machine and never leaves it.
 
 Already have a keystore? Use **Use Existing…** instead.
 
+![The Server tab after generating a certificate: step 1 is done, the proxy is stopped](assets/media/start-server-tab.png){ loading=lazy }
+
 ## 4. Start the proxy
 
 In the **Server** tab, click **Start**. The proxy listens on `127.0.0.1:9942` unless you change it in the settings (gear icon). Devices on your Wi-Fi can connect only after you allow it there.
@@ -58,8 +60,12 @@ Click **Connect a Client…** in the Server tab and pick what you want to debug:
 | iPhone / iOS | Guides you through the proxy, profile and trust settings |
 | Terminal & scripts | Gives you the environment variables for curl, Node, Python and Go |
 
+![The Connect a Client dialog listing Android emulator, Android phone, Java / Kotlin app, Browser, This computer, iPhone and Terminal](assets/media/start-connect-targets.png){ loading=lazy }
+
 Every flow ends with **Verify**: it waits for a decrypted HTTPS request from your client, so you know the setup
 works. Prefer doing it by hand? See [Device setup](device-setup.md).
+
+![The Verify step reports that HTTPS traffic is decrypted and shows the request from an okhttp client](assets/media/feature-connect.png){ loading=lazy }
 
 ## 6. See your first request
 
