@@ -15,12 +15,85 @@ Point your app or emulator at it and every request shows up in a tool window nex
 [Get started](getting-started.md){ .md-button .md-button--primary }
 [Install from JetBrains Marketplace](#){ .md-button }
 
+<div class="showcase" markdown>
+
+<div markdown>
+
+### 1. Easy setup
+
+The Connect wizard installs the certificate, routes the traffic and confirms your first decrypted request, for
+Android emulators, phones, JVM apps and browsers. No `adb` commands to type.
+
+[Getting started](getting-started.md){ .md-button }
+
+</div>
+
+<video autoplay loop muted playsinline controls poster="assets/media/easy-setup.png" width="1680" height="1050"
+       aria-label="The Connect a Client wizard sets up an Android emulator in four steps, then the app's HTTPS request appears decrypted in the Request Log">
+  <source src="assets/media/easy-setup.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<div class="showcase showcase--reverse" markdown>
+
+<div markdown>
+
+### 2. Works with your AI agent
+
+Claude Code, Cursor, VS Code and any MCP client can read the captured traffic, explain a failing call and, if you
+allow it, mock a response for you. It runs locally and is protected by a token.
+
+[Set up MCP](mcp.md){ .md-button }
+
+</div>
+
+```bash
+claude mcp add --transport http neocatcher \
+  http://127.0.0.1:9950/mcp \
+  --header "Authorization: Bearer <token>"
+```
+
+</div>
+
+<div class="showcase" markdown>
+
+<div markdown>
+
+### 3. Live breakpoints
+
+Pause a response while your app waits, change its status, headers or body, then send it on, and see the diff of
+what changed. Or abort the call to test your error handling.
+
+[Breakpoints](breakpoints.md){ .md-button }
+
+</div>
+
 <video autoplay loop muted playsinline controls poster="assets/media/home-hero.png" width="1680" height="1050"
        aria-label="A response from an Android app is paused in NeoCatcher, changed to an error and the app shows the error card">
   <source src="assets/media/home-hero.mp4" type="video/mp4">
 </video>
 
-## Why NeoCatcher
+</div>
+
+<div class="showcase showcase--reverse" markdown>
+
+<div markdown>
+
+### 4. Rules you write in seconds
+
+Mock a body, add a header or force a status code. Write the rule in a form, or in YAML and JSON with completion,
+documentation and inline errors.
+
+[Rules](rules.md){ .md-button }
+
+</div>
+
+![YAML rule editor with a completion popup offering replace and set](assets/media/feature-rules.png){ loading=lazy }
+
+</div>
+
+## And more
 
 <div class="grid cards" markdown>
 
@@ -57,76 +130,6 @@ Point your app or emulator at it and every request shows up in a tool window nex
 
     Claude Code, Cursor, VS Code and other MCP clients can read captured traffic and, with your permission,
     mock responses for you. [Set it up](mcp.md).
-
-</div>
-
-## See what changed
-
-<div class="showcase" markdown>
-
-<div markdown>
-
-### A diff for every response
-
-Select any request and open **Diff**: the upstream response on the left, what your app actually received on the
-right, with the changed status, headers and body lines highlighted. You always know what was real and what was mocked.
-
-[Request log](request-log.md){ .md-button }
-
-</div>
-
-![Diff view: status 200 became 503 and the whole body was replaced by an error object](assets/media/feature-diff.png){ loading=lazy }
-
-</div>
-
-<div class="showcase showcase--reverse" markdown>
-
-<div markdown>
-
-### Pause a live response and edit it
-
-Set a breakpoint on a URL. When the app calls it, the response waits in NeoCatcher: change the status, headers or
-body, then send it on, or abort the call to test your error handling.
-
-[Breakpoints](breakpoints.md){ .md-button }
-
-</div>
-
-![A paused response with the status being changed to 503 and the Abort, Reset and Execute buttons](assets/media/feature-breakpoints.png){ loading=lazy }
-
-</div>
-
-<div class="showcase" markdown>
-
-<div markdown>
-
-### Rules with completion and validation
-
-Mock a body, add a header or force a status code. Write the rule in a form, or in YAML and JSON with completion,
-documentation and inline errors.
-
-[Rules](rules.md){ .md-button }
-
-</div>
-
-![YAML rule editor with a completion popup offering replace and set](assets/media/feature-rules.png){ loading=lazy }
-
-</div>
-
-<div class="showcase showcase--reverse" markdown>
-
-<div markdown>
-
-### Set up a client in a few clicks
-
-The Connect wizard installs the certificate, routes the traffic and confirms the first decrypted request, for
-emulators, phones, JVM apps and browsers.
-
-[Getting started](getting-started.md){ .md-button }
-
-</div>
-
-![The Verify step: HTTPS traffic is decrypted, with the okhttp request shown](assets/media/feature-connect.png){ loading=lazy }
 
 </div>
 

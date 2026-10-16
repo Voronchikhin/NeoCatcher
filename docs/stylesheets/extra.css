@@ -25,7 +25,7 @@
 .md-typeset .showcase--reverse {
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
 }
-.md-typeset .showcase--reverse > div {
+.md-typeset .showcase--reverse > div:first-child {
   order: 2;
 }
 .md-typeset .showcase h3 {
@@ -36,7 +36,7 @@
   .md-typeset .showcase--reverse {
     grid-template-columns: minmax(0, 1fr);
   }
-  .md-typeset .showcase--reverse > div {
+  .md-typeset .showcase--reverse > div:first-child {
     order: 0;
   }
 }
