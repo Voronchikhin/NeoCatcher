@@ -7,6 +7,11 @@ like a debugger breakpoint, but for network calls.
     Breakpoints are part of [NeoCatcher Pro](pricing.md). The 30-day trial includes them. In Free you can see the
     Breakpoints tab, but responses do not pause.
 
+<video autoplay loop muted playsinline controls poster="../assets/media/breakpoints-flow.png" width="1680" height="1050"
+       aria-label="A request to /users/1 is paused at a breakpoint, its status and body are edited, and the app shows the changed profile">
+  <source src="../assets/media/breakpoints-flow.mp4" type="video/mp4">
+</video>
+
 ## Add a breakpoint
 
 - In **Request Log**, right-click a request → **Add Response Breakpoint…**, or
@@ -18,6 +23,8 @@ like a debugger breakpoint, but for network calls.
 A global switch turns all breakpoints off at once.
 
 ## When a response is paused
+
+![A paused response with the status being edited to 503, the header table, and the Abort, Reset and Execute buttons](assets/media/feature-breakpoints.png){ loading=lazy }
 
 The **Breakpoints** tab title shows how many responses are waiting, for example **Breakpoints (2)**.
 Select one to open the editor, change the **status**, **headers** or **body**, then:
