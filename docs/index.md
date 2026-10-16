@@ -60,6 +60,76 @@ Point your app or emulator at it and every request shows up in a tool window nex
 
 </div>
 
+## See what changed
+
+<div class="showcase" markdown>
+
+<div markdown>
+
+### A diff for every response
+
+Select any request and open **Diff**: the upstream response on the left, what your app actually received on the
+right, with the changed status, headers and body lines highlighted. You always know what was real and what was mocked.
+
+[Request log](request-log.md){ .md-button }
+
+</div>
+
+![Diff view: status 200 became 503 and the whole body was replaced by an error object](assets/media/feature-diff.png){ loading=lazy }
+
+</div>
+
+<div class="showcase showcase--reverse" markdown>
+
+<div markdown>
+
+### Pause a live response and edit it
+
+Set a breakpoint on a URL. When the app calls it, the response waits in NeoCatcher: change the status, headers or
+body, then send it on, or abort the call to test your error handling.
+
+[Breakpoints](breakpoints.md){ .md-button }
+
+</div>
+
+![A paused response with the status being changed to 503 and the Abort, Reset and Execute buttons](assets/media/feature-breakpoints.png){ loading=lazy }
+
+</div>
+
+<div class="showcase" markdown>
+
+<div markdown>
+
+### Rules with completion and validation
+
+Mock a body, add a header or force a status code. Write the rule in a form, or in YAML and JSON with completion,
+documentation and inline errors.
+
+[Rules](rules.md){ .md-button }
+
+</div>
+
+![YAML rule editor with a completion popup offering replace and set](assets/media/feature-rules.png){ loading=lazy }
+
+</div>
+
+<div class="showcase showcase--reverse" markdown>
+
+<div markdown>
+
+### Set up a client in a few clicks
+
+The Connect wizard installs the certificate, routes the traffic and confirms the first decrypted request, for
+emulators, phones, JVM apps and browsers.
+
+[Getting started](getting-started.md){ .md-button }
+
+</div>
+
+![The Verify step: HTTPS traffic is decrypted, with the okhttp request shown](assets/media/feature-connect.png){ loading=lazy }
+
+</div>
+
 ## How it works
 
 1. NeoCatcher starts a local HTTP(S) proxy on your machine (port `9942` by default).

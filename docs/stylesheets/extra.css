@@ -13,3 +13,30 @@
   border-radius: 8px;
   box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
 }
+
+/* Home page feature rows: text next to a screenshot, stacked on phones. */
+.md-typeset .showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+.md-typeset .showcase--reverse {
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+}
+.md-typeset .showcase--reverse > div {
+  order: 2;
+}
+.md-typeset .showcase h3 {
+  margin-top: 0;
+}
+@media (max-width: 60em) {
+  .md-typeset .showcase,
+  .md-typeset .showcase--reverse {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .md-typeset .showcase--reverse > div {
+    order: 0;
+  }
+}
