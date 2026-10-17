@@ -8,7 +8,7 @@ From zero to your first captured HTTPS request in about five minutes.
 2. Search for **NeoCatcher** and click **Install**.
 3. Restart the IDE if asked.
 
-Works in IntelliJ IDEA, Android Studio and other JetBrains IDEs, version 2023.2 or newer.
+Works in IntelliJ IDEA, Android Studio and other JetBrains IDEs, version 2025.3 or newer (EAP builds included).
 
 ## 2. Open the tool window
 
