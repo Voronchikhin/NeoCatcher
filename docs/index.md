@@ -89,7 +89,17 @@ documentation and inline errors.
 
 </div>
 
-![YAML rule editor with a completion popup offering replace and set](assets/media/feature-rules.png){ loading=lazy }
+<div markdown>
+
+=== "Visual"
+
+    ![The Visual rule editor: URL conditions on the left, body and status modifiers on the right](assets/media/rule-editor-visual.png){ loading=lazy }
+
+=== "YAML"
+
+    ![YAML rule editor with a completion popup offering replace and set](assets/media/feature-rules.png){ loading=lazy }
+
+</div>
 
 </div>
 
