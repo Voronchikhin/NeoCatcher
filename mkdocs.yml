@@ -12,6 +12,7 @@ theme:
   logo: assets/logo.svg
   favicon: assets/favicon.svg
   language: en
+  font: false
   features:
     - navigation.sections
     - navigation.top
@@ -51,6 +52,7 @@ nav:
   - Legal:
       - Terms of use: terms.md
       - Privacy notice: privacy.md
+      - Third-party notices: third-party-notices.md
 
 markdown_extensions:
   - admonition

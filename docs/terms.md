@@ -1,14 +1,11 @@
 # Terms of use
 
-<!-- DRAFT — must be reviewed by a Serbian lawyer before publishing. Fill in every [bracketed] field. -->
+<!-- Not yet reviewed by a lawyer (publication decision, 2026-10-17). Re-check the statements against each release. -->
 
-!!! warning "Draft"
-    This document is a draft and is not yet in force.
+*Last updated: 17 October 2026*
 
-*Last updated: [date]*
-
-These terms govern your use of the NeoCatcher plugin ("the Software") published by [Maksim Voronchikhin /
-entity name], [address], Republic of Serbia ("we", "us"). By installing or using the Software you agree to them.
+These terms govern your use of the NeoCatcher plugin ("the Software") published by Maksim Voronchikhin, an individual,
+Belgrade, Republic of Serbia ("we", "us"). By installing or using the Software you agree to them.
 If you buy a license through JetBrains Marketplace, the JetBrains Marketplace terms also apply to the purchase.
 
 ## 1. License
@@ -39,7 +36,7 @@ See the [Privacy notice](privacy.md).
 
 ## 4. Third-party components
 
-The Software includes open-source components under their own licenses, listed in [link to third-party notices].
+The Software includes open-source components under their own licenses, listed in the [third-party notices](third-party-notices.md).
 
 ## 5. No warranty
 
@@ -65,7 +62,7 @@ plugin's change notes.
 ## 9. Governing law
 
 These terms are governed by the laws of the Republic of Serbia. Disputes are decided by the competent court in
-[city], unless mandatory consumer law gives you the right to sue in your own country.
+Belgrade, unless mandatory consumer law gives you the right to sue in your own country.
 
 ## 10. Contact
 

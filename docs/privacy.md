@@ -1,19 +1,15 @@
 # Privacy notice
 
-<!-- DRAFT — must be reviewed by a Serbian lawyer before publishing. Fill in every [bracketed] field,
-     and confirm each statement against the released plugin and website. -->
+<!-- Not yet reviewed by a lawyer (publication decision, 2026-10-17). Re-check the statements against each release. -->
 
-!!! warning "Draft"
-    This document is a draft and is not yet in force.
-
-*Last updated: [date]*
+*Last updated: 17 October 2026*
 
 **Short version:** the NeoCatcher plugin does not send us your traffic or any data about how you use it.
 We only receive what you send us yourself, such as support emails.
 
 ## Who we are
 
-[Maksim Voronchikhin / entity name], [address], Republic of Serbia, is the controller of the personal data described
+Maksim Voronchikhin, an individual in Belgrade, Republic of Serbia, is the controller of the personal data described
 here. Contact: [privacy@neocatcher.com](mailto:privacy@neocatcher.com).
 
 ## The plugin
@@ -33,16 +29,16 @@ provider under its own terms.
 
 Pro licenses are sold by JetBrains s.r.o. through JetBrains Marketplace. JetBrains processes your account, payment
 and license data as a separate controller under its own privacy policy. We receive sales reports from JetBrains,
-which may include [company name / country — confirm what the vendor reports contain].
+which can include the buyer's company name and country.
 
 ## This website
 
 - Hosted on GitHub Pages; GitHub may log IP addresses for security, see GitHub's privacy statement.
-- [If analytics are added: we use (Plausible / GoatCounter), which does not use cookies or collect personal data.]
+- We do not use analytics or cookies on this site.
 
 ## Support email
 
-When you email us we process your address and message to answer you, and keep them for up to [24 months] after
+When you email us we process your address and message to answer you, and keep them for up to 24 months after
 the conversation ends. Legal basis: our legitimate interest in providing support, or steps before/under a contract.
 
 ## Your rights
