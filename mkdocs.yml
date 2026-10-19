@@ -9,6 +9,8 @@ copyright: Copyright &copy; 2026 Maksim Voronchikhin
 
 theme:
   name: material
+  # overrides/partials/header.html adds the Marketplace install button to the header.
+  custom_dir: overrides
   logo: assets/logo.svg
   favicon: assets/favicon.svg
   language: en

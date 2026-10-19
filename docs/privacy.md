@@ -34,7 +34,8 @@ which can include the buyer's company name and country.
 ## This website
 
 - Hosted on GitHub Pages; GitHub may log IP addresses for security, see GitHub's privacy statement.
-- The home page shows JetBrains Marketplace's install button, loaded from plugins.jetbrains.com. Your browser
+- On wide screens the site header shows JetBrains Marketplace's install button, loaded from plugins.jetbrains.com.
+  Your browser
   then connects to JetBrains, which receives your IP address and sets technical load-balancing cookies
   (AWSALB, AWSALBCORS) under the [JetBrains privacy policy](https://www.jetbrains.com/legal/docs/privacy/privacy/).
 - Our own pages use no analytics and set no cookies.

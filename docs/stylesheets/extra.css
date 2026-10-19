@@ -94,18 +94,34 @@
   }
 }
 
-/* Home page: "Get started" and JetBrains' install button (an iframe) side by side, wrapping on narrow screens. */
-.md-typeset .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.8rem;
+/* JetBrains' install button in the header (overrides/partials/header.html), right after the logo and site name.
+   The title normally stretches to fill the header, which would push the button to the far right; a fixed width
+   keeps it next to the name; 8.6rem (172 px) fits the longest page title shown on scroll, "Third-party notices"
+   (168 px). The 245x48 widget is scaled to 70% to
+   sit inside the 48 px header. Phones get no header button: there is no room, and plugins install from the IDE. */
+.md-header__marketplace {
+  display: none;
 }
-.md-typeset .hero-actions > p {
-  margin: 0;
-}
-.md-typeset iframe.marketplace-install {
-  display: block;
-  border: 0;
-  max-width: 100%;
+@media screen and (min-width: 60em) {
+  .md-header__title {
+    flex: 0 0 8.6rem;
+  }
+  .md-header__marketplace {
+    display: block;
+    flex-shrink: 0;
+    width: 171.5px;
+    height: 33.6px;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .md-header__marketplace iframe {
+    width: 245px;
+    height: 48px;
+    border: 0;
+    transform: scale(0.7);
+    transform-origin: 0 0;
+    /* The widget page is light; under the dark theme a mismatched color-scheme makes browsers paint the frame with
+       an opaque white backdrop instead of keeping it transparent. */
+    color-scheme: light;
+  }
 }

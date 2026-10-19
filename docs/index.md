@@ -12,16 +12,7 @@ hide:
 NeoCatcher is a debugging proxy that lives in IntelliJ IDEA, Android Studio and other JetBrains IDEs.
 Point your app or emulator at it and every request shows up in a tool window next to your code.
 
-<div class="hero-actions" markdown>
-
 [Get started](getting-started.md){ .md-button .md-button--primary }
-
-<!-- JetBrains' official install button, as an iframe rather than their script widget so no third-party code runs in
-     this page. If a browser blocks it, Getting started still links to the Marketplace page. -->
-<iframe class="marketplace-install" src="https://plugins.jetbrains.com/embeddable/install/35220"
-        width="245" height="48" title="Install NeoCatcher from JetBrains Marketplace"></iframe>
-
-</div>
 
 <div class="showcase" markdown>
 
