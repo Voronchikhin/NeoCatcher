@@ -15,7 +15,7 @@ Select an entry to open its preview. Switch between **Request** and **Response**
 Entries changed by a rule or breakpoint are labelled with its name, so you can always tell what was real and what
 was mocked.
 
-![A response diff: the original upstream response on the left, the version after two rules on the right, with the changed title and the added header highlighted](assets/media/feature-request-log.png){ loading=lazy }
+![A response diff: the original upstream response on the left, the version after two rules on the right, with the changed title and the added header highlighted](assets/media/feature-request-log.webp){ loading=lazy }
 
 ## Filtering
 

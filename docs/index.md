@@ -28,7 +28,7 @@ Android emulators, phones, JVM apps and browsers. No `adb` commands to type.
 
 </div>
 
-<video autoplay loop muted playsinline controls poster="assets/media/easy-setup.png" width="1680" height="1050"
+<video autoplay loop muted playsinline controls poster="assets/media/easy-setup.webp" width="1680" height="1050"
        aria-label="The Connect a Client wizard sets up an Android emulator in four steps, then the app's HTTPS request appears decrypted in the Request Log">
   <source src="assets/media/easy-setup.mp4" type="video/mp4">
 </video>
@@ -69,7 +69,7 @@ what changed. Or abort the call to test your error handling.
 
 </div>
 
-<video autoplay loop muted playsinline controls poster="assets/media/home-hero.png" width="1680" height="1050"
+<video autoplay loop muted playsinline controls poster="assets/media/home-hero.webp" width="1680" height="1050"
        aria-label="A response from an Android app is paused in NeoCatcher, changed to an error and the app shows the error card">
   <source src="assets/media/home-hero.mp4" type="video/mp4">
 </video>
@@ -93,11 +93,11 @@ documentation and inline errors.
 
 === "Visual"
 
-    ![The Visual rule editor: URL conditions on the left, body and status modifiers on the right](assets/media/rule-editor-visual.png){ loading=lazy }
+    ![The Visual rule editor: URL conditions on the left, body and status modifiers on the right](assets/media/rule-editor-visual.webp){ loading=lazy }
 
 === "YAML"
 
-    ![YAML rule editor with a completion popup offering replace and set](assets/media/feature-rules.png){ loading=lazy }
+    ![YAML rule editor with a completion popup offering replace and set](assets/media/feature-rules.webp){ loading=lazy }
 
 </div>
 

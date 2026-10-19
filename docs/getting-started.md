@@ -40,7 +40,7 @@ machine and never leaves it.
 
 Already have a keystore? Use **Use Existing…** instead.
 
-![The Server tab after generating a certificate: step 1 is done, the proxy is stopped](assets/media/start-server-tab.png){ loading=lazy }
+![The Server tab after generating a certificate: step 1 is done, the proxy is stopped](assets/media/start-server-tab.webp){ loading=lazy }
 
 ## 4. Start the proxy
 
@@ -60,17 +60,17 @@ Click **Connect a Client…** in the Server tab and pick what you want to debug:
 | iPhone / iOS | Guides you through the proxy, profile and trust settings |
 | Terminal & scripts | Gives you the environment variables for curl, Node, Python and Go |
 
-![The Connect a Client dialog listing Android emulator, Android phone, Java / Kotlin app, Browser, This computer, iPhone and Terminal](assets/media/start-connect-targets.png){ loading=lazy }
+![The Connect a Client dialog listing Android emulator, Android phone, Java / Kotlin app, Browser, This computer, iPhone and Terminal](assets/media/start-connect-targets.webp){ loading=lazy }
 
 Every flow ends with **Verify**: it waits for a decrypted HTTPS request from your client, so you know the setup
 works. Prefer doing it by hand? See [Device setup](device-setup.md).
 
-<video autoplay loop muted playsinline controls poster="../assets/media/easy-setup.png" width="1680" height="1050"
+<video autoplay loop muted playsinline controls poster="../assets/media/easy-setup.webp" width="1680" height="1050"
        aria-label="The Connect a Client wizard sets up an Android emulator in four steps, then the app's HTTPS request appears decrypted in the Request Log">
   <source src="../assets/media/easy-setup.mp4" type="video/mp4">
 </video>
 
-![The Verify step reports that HTTPS traffic is decrypted and shows the request from an okhttp client](assets/media/feature-connect.png){ loading=lazy }
+![The Verify step reports that HTTPS traffic is decrypted and shows the request from an okhttp client](assets/media/feature-connect.webp){ loading=lazy }
 
 ## 6. See your first request
 
