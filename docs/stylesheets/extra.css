@@ -40,3 +40,56 @@
     order: 0;
   }
 }
+
+/* The home page hides the navigation sidebar (front matter "hide: navigation") to keep its full-width layout.
+   Phones already reach the guide through the burger; on wide screens Material hides the burger, so the home page
+   had no navigation at all. Here the burger stays visible and opens the same navigation as a drawer, with the
+   values of Material's own phone drawer. Scoped by :has() to pages whose sidebar is hidden; guide pages keep the
+   normal sidebar. */
+@media screen and (min-width: 76.25em) {
+  body:has(.md-sidebar--primary[hidden]) .md-header__button[for="__drawer"] {
+    display: inline-block;
+  }
+  .md-sidebar--primary[hidden] {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -12.1rem;
+    width: 12.1rem;
+    height: 100%;
+    padding: 0;
+    z-index: 5;
+    background-color: var(--md-default-bg-color);
+    transform: translateX(0);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s;
+  }
+  [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary[hidden] {
+    box-shadow: var(--md-shadow-z3);
+    transform: translateX(12.1rem);
+  }
+  /* Material sizes the sidebar's scroll area for a sticky column; a drawer scrolls over the full height. */
+  .md-sidebar--primary[hidden] .md-sidebar__scrollwrap {
+    position: absolute;
+    inset: 0;
+    height: auto !important;
+    margin: 0;
+    padding: 1.2rem 0.4rem;
+    overflow-y: auto;
+  }
+  body:has(.md-sidebar--primary[hidden]) .md-overlay {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: #0000008a;
+    transition: width 0ms 0.25s, height 0ms 0.25s, opacity 0.25s;
+  }
+  body:has(.md-sidebar--primary[hidden]) [data-md-toggle="drawer"]:checked ~ .md-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: width 0ms, height 0ms, opacity 0.25s;
+  }
+}
