@@ -93,3 +93,19 @@
     transition: width 0ms, height 0ms, opacity 0.25s;
   }
 }
+
+/* Home page: "Get started" and JetBrains' install button (an iframe) side by side, wrapping on narrow screens. */
+.md-typeset .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+}
+.md-typeset .hero-actions > p {
+  margin: 0;
+}
+.md-typeset iframe.marketplace-install {
+  display: block;
+  border: 0;
+  max-width: 100%;
+}

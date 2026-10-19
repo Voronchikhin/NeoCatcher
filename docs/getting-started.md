@@ -5,7 +5,7 @@ From zero to your first captured HTTPS request in about five minutes.
 ## 1. Install the plugin
 
 1. Open **Settings → Plugins → Marketplace**.
-2. Search for **NeoCatcher** and click **Install**.
+2. Search for **NeoCatcher** and click **Install**, or open the [NeoCatcher page on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35220-neocatcher).
 3. Restart the IDE if asked.
 
 Works in IntelliJ IDEA, Android Studio and other JetBrains IDEs, version 2025.3 or newer (EAP builds included).
