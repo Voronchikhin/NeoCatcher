@@ -25,8 +25,9 @@
 
 ### Security
 
-- The proxy engine's built-in MCP endpoint and dashboard analytics are turned off. They answered on the proxy port,
-  which devices on your network can reach.
+- The proxy port no longer gives access to the proxy engine's own API: it refuses everyone but NeoCatcher itself, so
+  devices on your network can't add mock responses or read captured traffic through it. The engine's built-in MCP
+  endpoint and dashboard analytics are turned off.
 
 ## 1.0.1 — 2026-10-21
 
