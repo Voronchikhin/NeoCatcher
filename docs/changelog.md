@@ -21,13 +21,12 @@
 - New rule conditions compare with Glob instead of Equals: a plain value still matches exactly, and `*` is there
   when you need it.
 - Connect wizard: steps you shouldn't skip move on with **Next**; only optional steps offer **Skip**.
-- The proxy engine is updated to MockServer 9.1.
 - Supported IDEs: 2025.3 up to the current EAP (2026.3). Later IDE versions are added in later releases, once tested.
 
 ### Security
 
-- MockServer's own MCP endpoint and dashboard analytics are turned off. They answered on the proxy port, which
-  devices on your network can reach.
+- The proxy engine's built-in MCP endpoint and dashboard analytics are turned off. They answered on the proxy port,
+  which devices on your network can reach.
 
 ## 1.0.1 — 2026-10-21
 

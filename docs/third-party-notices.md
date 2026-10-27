@@ -1,7 +1,164 @@
 # Third-party notices
 
-NeoCatcher includes the open-source components below, each under its own license. The full license texts ship
-inside the plugin (`THIRD-PARTY-NOTICES.txt`). This list is for NeoCatcher 1.0.0.
+NeoCatcher includes the open-source components below, each under its own license. Every release ships the full
+license texts for its components inside the plugin (`THIRD-PARTY-NOTICES.txt`). Newest release first.
+
+## 1.0.2
+
+| Component | Version | License |
+| --- | --- | --- |
+| [com.ethlo.time:itu](https://github.com/ethlo/itu) | 1.14.0 | Apache License, Version 2.0 |
+| [com.fasterxml.jackson:jackson-bom](https://github.com/FasterXML/jackson-bom) | 2.22.3 | Apache License, Version 2.0 |
+| [com.fasterxml.jackson.core:jackson-annotations](https://github.com/FasterXML/jackson) | 2.22 | Apache License, Version 2.0 |
+| [com.fasterxml.jackson.core:jackson-core](https://github.com/FasterXML/jackson-core) | 2.22.3 | Apache License, Version 2.0 |
+| [com.fasterxml.jackson.core:jackson-databind](https://github.com/FasterXML/jackson) | 2.22.3 | Apache License, Version 2.0 |
+| [com.fasterxml.jackson.dataformat:jackson-dataformat-yaml](https://github.com/FasterXML/jackson-dataformats-text) | 2.22.3 | Apache License, Version 2.0 |
+| [com.fasterxml.jackson.datatype:jackson-datatype-jsr310](https://github.com/FasterXML/jackson-modules-java8/jackson-datatype-jsr310) | 2.22.3 | Apache License, Version 2.0 |
+| [com.fasterxml.uuid:java-uuid-generator](https://github.com/cowtowncoder/java-uuid-generator) | 5.2.0 | Apache License, Version 2.0 |
+| [com.github.cliftonlabs:json-simple](https://cliftonlabs.github.io/json-simple/) | 3.0.2 | Apache License, Version 2.0 |
+| [com.github.java-json-tools:btf](https://github.com/java-json-tools/btf) | 1.3 | Apache Software License, version 2.0; Lesser General Public License, version 3 or greater |
+| [com.github.java-json-tools:jackson-coreutils](https://github.com/java-json-tools/jackson-coreutils) | 2.0 | Apache Software License, version 2.0; Lesser General Public License, version 3 or greater |
+| [com.github.java-json-tools:jackson-coreutils-equivalence](https://github.com/java-json-tools/jackson-coreutils) | 1.0 | Apache Software License, version 2.0; Lesser General Public License, version 3 or greater |
+| [com.github.java-json-tools:json-patch](https://github.com/java-json-tools/json-patch) | 1.13 | Apache Software License, version 2.0; Lesser General Public License, version 3 or greater |
+| [com.github.java-json-tools:json-schema-core](https://github.com/java-json-tools/json-schema-core) | 1.2.14 | Apache Software License, version 2.0; Lesser General Public License, version 3 or greater |
+| [com.github.java-json-tools:json-schema-validator](https://github.com/java-json-tools/json-schema-validator) | 2.2.14 | Apache Software License, version 2.0; Lesser General Public License, version 3 or greater |
+| [com.github.java-json-tools:msg-simple](https://github.com/java-json-tools/msg-simple) | 1.2 | Apache Software License, version 2.0; Lesser General Public License, version 3 or greater |
+| [com.github.java-json-tools:uri-template](https://github.com/java-json-tools/uri-template) | 0.10 | Apache Software License, version 2.0; Lesser General Public License, version 3 or greater |
+| [com.google.code.findbugs:jsr305](http://findbugs.sourceforge.net/) | 3.0.2 | Apache License, Version 2.0 |
+| [com.google.code.gson:gson](https://github.com/google/gson/gson) | 2.8.9 | Apache-2.0 |
+| [com.google.errorprone:error_prone_annotations](https://errorprone.info/error_prone_annotations) | 2.50.0 | Apache 2.0 |
+| [com.google.guava:failureaccess](https://github.com/google/guava/) | 1.0.3 | Apache License, Version 2.0 |
+| [com.google.guava:guava](https://github.com/google/guava) | 33.7.2-jre | Apache License, Version 2.0 |
+| com.google.guava:listenablefuture | 9999.0-empty-to-avoid-conflict-with-guava | Apache License, Version 2.0 |
+| [com.google.j2objc:j2objc-annotations](https://github.com/google/j2objc/) | 3.1 | Apache License, Version 2.0 |
+| [com.google.protobuf:protobuf-java](https://developers.google.com/protocol-buffers/) | 4.36.2 | BSD-3-Clause |
+| [com.google.protobuf:protobuf-java-util](https://developers.google.com/protocol-buffers/) | 4.36.2 | BSD-3-Clause |
+| [com.hrakaroo:glob](https://github.com/hrakaroo/glob-library-java) | 0.9.0 | MIT License |
+| [com.jayway.jsonpath:json-path](https://github.com/jayway/JsonPath) | 3.0.0 | Apache License, Version 2.0 |
+| [com.jcraft:jzlib](http://www.jcraft.com/jzlib/) | 1.1.3 | BSD |
+| [com.lmax:disruptor](https://lmax-exchange.github.io/disruptor) | 4.0.0 | The Apache License, Version 2.0 |
+| [com.networknt:json-schema-validator](https://github.com/networknt/json-schema-validator) | 3.0.8 | Apache License Version 2.0 |
+| [com.nimbusds:nimbus-jose-jwt](https://bitbucket.org/connect2id/nimbus-jose-jwt) | 10.10 | Apache License, Version 2.0 |
+| [com.samskivert:jmustache](http://github.com/samskivert/jmustache) | 1.16 | The (New) BSD License |
+| [com.sun.xml.bind:jaxb-core](https://eclipse-ee4j.github.io/jaxb-ri/) | 4.0.9 | Eclipse Distribution License - v 1.0; Eclipse Public License v. 2.0; GNU General Public License, version 2 with the GNU Classpath Exception |
+| [com.sun.xml.bind:jaxb-impl](https://eclipse-ee4j.github.io/jaxb-ri/) | 4.0.9 | Eclipse Distribution License - v 1.0; Eclipse Public License v. 2.0; GNU General Public License, version 2 with the GNU Classpath Exception |
+| [commons-beanutils:commons-beanutils](https://commons.apache.org/proper/commons-beanutils) | 1.11.0 | Apache-2.0 |
+| [commons-codec:commons-codec](https://commons.apache.org/proper/commons-codec/) | 1.23.0 | Apache-2.0 |
+| [commons-collections:commons-collections](http://commons.apache.org/collections/) | 3.2.2 | Apache License, Version 2.0 |
+| [commons-io:commons-io](https://commons.apache.org/proper/commons-io/) | 2.22.0 | Apache-2.0 |
+| [commons-logging:commons-logging](https://commons.apache.org/proper/commons-logging/) | 1.3.5 | Apache-2.0 |
+| io.github.classgraph:classgraph | 5.0.0 | The MIT License (MIT) |
+| io.github.classgraph:classgraph-base | 5.0.0 | The MIT License (MIT) |
+| io.github.classgraph:classgraph-classpath | 5.0.0 | The MIT License (MIT) |
+| io.github.classgraph:classgraph-vfs | 5.0.0 | The MIT License (MIT) |
+| [io.netty:netty-buffer](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec-base](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec-compression](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec-dns](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec-http](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec-http2](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec-marshalling](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec-protobuf](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-codec-socks](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-common](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-handler](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-handler-proxy](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-resolver](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-tcnative-boringssl-static](https://github.com/netty/netty-tcnative/netty-tcnative-boringssl-static/) | 2.0.84.Final | Apache License, Version 2.0 |
+| [io.netty:netty-tcnative-classes](https://netty.io/) | 2.0.84.Final | Apache License, Version 2.0 |
+| [io.netty:netty-transport](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-transport-classes-epoll](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-transport-native-epoll](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.netty:netty-transport-native-unix-common](https://netty.io/) | 4.2.19.Final | Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-api](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-common](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-context](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-exporter-common](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-exporter-otlp](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-exporter-otlp-common](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-exporter-sender-jdk](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-sdk-common](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-sdk-logs](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-sdk-metrics](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| [io.opentelemetry:opentelemetry-sdk-trace](https://github.com/open-telemetry/opentelemetry-java) | 1.67.0 | The Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-config | 1.10.0 | Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-core | 1.10.0 | Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-exposition-formats | 1.10.0 | Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-exposition-textformats | 1.10.0 | Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-model | 1.10.0 | Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-tracer-common | 1.10.0 | Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-tracer-initializer | 1.10.0 | Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-tracer-otel | 1.10.0 | Apache License, Version 2.0 |
+| io.prometheus:prometheus-metrics-tracer-otel-agent | 1.10.0 | Apache License, Version 2.0 |
+| [io.swagger:swagger-annotations](https://github.com/swagger-api/swagger-core/modules/swagger-annotations) | 1.6.16 | Apache License 2.0 |
+| io.swagger:swagger-compat-spec-parser | 1.0.76 | Apache License 2.0 |
+| [io.swagger:swagger-core](https://github.com/swagger-api/swagger-core/modules/swagger-core) | 1.6.16 | Apache License 2.0 |
+| [io.swagger:swagger-models](https://github.com/swagger-api/swagger-core/modules/swagger-models) | 1.6.16 | Apache License 2.0 |
+| io.swagger:swagger-parser | 1.0.76 | Apache License 2.0 |
+| io.swagger:swagger-parser-safe-url-resolver | 1.0.76 | Apache License 2.0 |
+| [io.swagger.core.v3:swagger-annotations](https://github.com/swagger-api/swagger-core/modules/swagger-annotations) | 2.2.53 | Apache License 2.0 |
+| [io.swagger.core.v3:swagger-core](https://github.com/swagger-api/swagger-core/modules/swagger-core) | 2.2.53 | Apache License 2.0 |
+| [io.swagger.core.v3:swagger-models](https://github.com/swagger-api/swagger-core/modules/swagger-models) | 2.2.53 | Apache License 2.0 |
+| io.swagger.parser.v3:swagger-parser | 2.1.48 | Apache License 2.0 |
+| io.swagger.parser.v3:swagger-parser-core | 2.1.48 | Apache License 2.0 |
+| io.swagger.parser.v3:swagger-parser-safe-url-resolver | 2.1.48 | Apache License 2.0 |
+| io.swagger.parser.v3:swagger-parser-v2-converter | 2.1.48 | Apache License 2.0 |
+| io.swagger.parser.v3:swagger-parser-v3 | 2.1.48 | Apache License 2.0 |
+| [jakarta.activation:jakarta.activation-api](https://github.com/jakartaee/jaf-api) | 2.1.4 | EDL 1.0; Eclipse Public License v. 2.0; GNU General Public License, version 2 with the GNU Classpath Exception |
+| [jakarta.servlet:jakarta.servlet-api](https://projects.eclipse.org/projects/ee4j.servlet) | 6.1.0 | EPL 2.0; Eclipse Public License v. 2.0; GNU General Public License, version 2 with the GNU Classpath Exception; GPL2 w/ CPE |
+| [jakarta.validation:jakarta.validation-api](https://beanvalidation.org) | 2.0.2 | Apache License 2.0; Eclipse Public License v. 2.0; GNU General Public License, version 2 with the GNU Classpath Exception |
+| [jakarta.xml.bind:jakarta.xml.bind-api](https://www.eclipse.org) | 4.0.5 | Eclipse Distribution License - v 1.0; Eclipse Public License v. 2.0; GNU General Public License, version 2 with the GNU Classpath Exception |
+| [javax.validation:validation-api](http://beanvalidation.org) | 1.1.0.Final | Apache License, Version 2.0 |
+| [joda-time:joda-time](https://www.joda.org/joda-time/) | 2.10.5 | Apache License, Version 2.0 |
+| net.javacrumbs.json-unit:json-unit-core | 6.3.0 | Apache License, Version 2.0 |
+| [net.minidev:accessors-smart](https://urielch.github.io/) | 2.6.0 | Apache License, Version 2.0 |
+| [net.minidev:json-smart](https://urielch.github.io/) | 2.6.0 | Apache License, Version 2.0 |
+| [net.sf.jopt-simple:jopt-simple](http://jopt-simple.github.io/jopt-simple) | 5.0.4 | The MIT License |
+| [org.apache.commons:commons-digester3](http://commons.apache.org/digester/) | 3.2 | Apache License, Version 2.0 |
+| [org.apache.commons:commons-lang3](https://commons.apache.org/proper/commons-lang/) | 3.21.0 | Apache-2.0 |
+| [org.apache.commons:commons-text](https://commons.apache.org/proper/commons-text) | 1.15.0 | Apache-2.0 |
+| [org.apache.httpcomponents:httpclient](http://hc.apache.org/httpcomponents-client-ga) | 4.5.14 | Apache License, Version 2.0 |
+| [org.apache.httpcomponents:httpcore](http://hc.apache.org/httpcomponents-core-ga) | 4.4.16 | Apache License, Version 2.0 |
+| org.apache.logging.log4j:log4j-api | 2.22.1 | Apache-2.0 |
+| org.apache.logging.log4j:log4j-core | 2.22.1 | Apache-2.0 |
+| org.apache.logging.log4j:log4j-slf4j-impl | 2.22.1 | Apache-2.0 |
+| [org.apache.velocity:velocity-engine-core](https://www.apache.org/) | 2.4.1 | Apache-2.0 |
+| [org.apache.velocity:velocity-engine-scripting](https://www.apache.org/) | 2.4.1 | Apache-2.0 |
+| org.apache.velocity.tools:velocity-tools-generic | 3.1 | Apache License, Version 2.0 |
+| [org.bouncycastle:bcpkix-jdk18on](https://www.bouncycastle.org/download/bouncy-castle-java/) | 1.86 | Bouncy Castle Licence |
+| [org.bouncycastle:bcprov-jdk18on](https://www.bouncycastle.org/download/bouncy-castle-java/) | 1.86 | Bouncy Castle Licence |
+| [org.bouncycastle:bcutil-jdk18on](https://www.bouncycastle.org/download/bouncy-castle-java/) | 1.86 | Bouncy Castle Licence |
+| [org.eclipse.angus:angus-activation](https://www.eclipse.org) | 2.0.3 | EDL 1.0; Eclipse Public License v. 2.0; GNU General Public License, version 2 with the GNU Classpath Exception |
+| [org.hdrhistogram:HdrHistogram](http://hdrhistogram.github.io/HdrHistogram/) | 2.2.2 | BSD-2-Clause; Public Domain, per Creative Commons CC0 |
+| [org.jetbrains.kotlin:kotlin-stdlib-common](https://kotlinlang.org/) | 1.9.22 | The Apache License, Version 2.0 |
+| [org.jetbrains.kotlinx:kotlinx-serialization-bom](https://github.com/Kotlin/kotlinx.serialization) | 1.6.3 | Apache License, Version 2.0 |
+| [org.jetbrains.kotlinx:kotlinx-serialization-core](https://github.com/Kotlin/kotlinx.serialization) | 1.6.3 | Apache License, Version 2.0 |
+| [org.jetbrains.kotlinx:kotlinx-serialization-core-jvm](https://github.com/Kotlin/kotlinx.serialization) | 1.6.3 | Apache License, Version 2.0 |
+| [org.jetbrains.kotlinx:kotlinx-serialization-json](https://github.com/Kotlin/kotlinx.serialization) | 1.6.3 | Apache License, Version 2.0 |
+| [org.jetbrains.kotlinx:kotlinx-serialization-json-jvm](https://github.com/Kotlin/kotlinx.serialization) | 1.6.3 | Apache License, Version 2.0 |
+| [org.jspecify:jspecify](https://jspecify.dev/) | 1.0.1 | The Apache License, Version 2.0 |
+| [org.mock-server:mockserver-client-java](https://www.mock-server.com) | 9.1.0 | Apache License, Version 2.0 |
+| [org.mock-server:mockserver-core](https://www.mock-server.com) | 9.1.0 | Apache License, Version 2.0 |
+| [org.mock-server:mockserver-netty](https://www.mock-server.com) | 9.1.0 | Apache License, Version 2.0 |
+| [org.mozilla:rhino](https://mozilla.github.io/rhino/) | 1.9.1 | Mozilla Public License, Version 2.0 |
+| [org.opentest4j:opentest4j](https://github.com/ota4j-team/opentest4j) | 1.3.0 | The Apache License, Version 2.0 |
+| [org.ow2.asm:asm](http://asm.ow2.io/) | 9.7.1 | BSD-3-Clause; Apache License, Version 2.0 |
+| [org.slf4j:slf4j-api](http://www.slf4j.org) | 2.0.20 | MIT |
+| [org.snakeyaml:snakeyaml-engine](https://bitbucket.org/snakeyaml/snakeyaml-engine) | 3.0.1 | Apache License, Version 2.0 |
+| [org.xmlunit:xmlunit-core](https://www.xmlunit.org/) | 2.14.0 | Apache License, Version 2.0 |
+| [org.xmlunit:xmlunit-placeholders](https://www.xmlunit.org/xmlunit-placeholders/) | 2.14.0 | Apache License, Version 2.0 |
+| [tools.jackson:jackson-bom](https://github.com/FasterXML/jackson-bom) | 3.2.1 | Apache License, Version 2.0 |
+| [tools.jackson.core:jackson-core](https://github.com/FasterXML/jackson-core) | 3.2.1 | Apache License, Version 2.0 |
+| [tools.jackson.core:jackson-databind](https://github.com/FasterXML/jackson) | 3.2.1 | Apache License, Version 2.0 |
+| [tools.jackson.dataformat:jackson-dataformat-yaml](https://github.com/FasterXML/jackson-dataformats-text) | 3.2.1 | Apache License, Version 2.0 |
+
+## 1.0.1
+
+The same components and versions as 1.0.0, except Hamcrest (`org.hamcrest:hamcrest` and
+`org.hamcrest:hamcrest-core` 2.2), which 1.0.1 no longer includes.
+
+## 1.0.0
 
 | Component | Version | License |
 | --- | --- | --- |
