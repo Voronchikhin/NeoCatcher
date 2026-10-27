@@ -30,7 +30,7 @@ certificate except the real server's. Disable pinning in debug builds.
 
 Android Studio needs the **JetBrains Marketplace Licensing** plugin for paid plugins. Install it from
 **Settings → Plugins → Marketplace** (the Pro notification's **Open Plugins Settings…** takes you there), restart,
-then **Help → Register…**. See
+then **Get Pro…** in the Server tab or **Help → Manage Licenses…**. See
 [Trial and purchase](trial-and-purchase.md).
 
 ## "Could not root your Android Emulator"

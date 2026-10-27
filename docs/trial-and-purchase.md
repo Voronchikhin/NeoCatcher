@@ -10,14 +10,15 @@ The top right of the **Server** tab shows your edition: **Free** or **Pro**.
 1. Open the license dialog in one of these ways:
     - click **Get Pro…** in the top right of the **Server** tab;
     - click **Start free trial or buy…** in the notification that appears when you use a Pro feature;
-    - choose **Help → Register…** and select **NeoCatcher** in the list.
+    - from the menu: **Help → Register…** in IntelliJ IDEA and other JetBrains IDEs, or **Help → Manage Licenses…** in
+      Android Studio (it appears once JetBrains Marketplace Licensing is installed), then select **NeoCatcher**.
 2. Sign in with your JetBrains Account and start the trial (**Start Trial** or **Evaluate for free**, depending on
    your IDE version).
 3. The **Server** tab switches to **Pro**. No restart needed.
 
 !!! tip "Android Studio"
     Android Studio has no license check of its own. It comes with the free **JetBrains Marketplace Licensing**
-    plugin, which the IDE usually installs together with NeoCatcher. If **Help → Register…** doesn't list NeoCatcher,
+    plugin, which the IDE usually installs together with NeoCatcher. If the **Help** menu has no **Manage Licenses…**,
     or a Pro notification says the license check is not available:
 
     1. Click **Open Plugins Settings…** in that notification (or open **Settings → Plugins** yourself), switch to
@@ -42,7 +43,8 @@ The license is added to the JetBrains Account you buy with, and a confirmation a
 
 ## Activate a license you bought
 
-1. **Help → Register…** → **NeoCatcher**.
+1. Open the license dialog: **Get Pro…** in the **Server** tab, or **Help → Register…** (Android Studio:
+   **Help → Manage Licenses…**), then **NeoCatcher**.
 2. Sign in with the JetBrains Account that holds the license (or that your company assigned it to), or paste an
    activation code.
 3. The **Server** tab switches to **Pro**.
