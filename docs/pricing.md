@@ -8,6 +8,8 @@ Everything you need to see your app's traffic is free. Pro is for changing it at
 | Request log, formatted bodies, diff | ✓ | ✓ |
 | Copy as cURL | ✓ | ✓ |
 | Rule editor with YAML/JSON completion | ✓ | ✓ |
+| Response body from a project file, response delay | ✓ | ✓ |
+| Decrypt HTTPS on/off (pass HTTPS through for release builds) | ✓ | ✓ |
 | Active request and response rules | 3 | Unlimited |
 | Rules shared with your team through git *(coming soon)* | | ✓ |
 | Response breakpoints | | ✓ |
@@ -21,8 +23,8 @@ Everything you need to see your app's traffic is free. Pro is for changing it at
 | Personal (you pay) | $4.90 | $49 |
 | Commercial (your company pays, per user) | $9.90 | $99 |
 
-- **30-day free trial** of Pro: **Help → Register…**, pick NeoCatcher, choose *Start trial* — or click **Get Pro…** in
-  the Server tab. No restart needed.
+- **30-day free trial** of Pro: click **Get Pro…** in the Server tab, or **Help → Register…** and pick NeoCatcher.
+  No restart needed. Step by step, including Android Studio: [Trial and purchase](trial-and-purchase.md).
 - **Free stays useful:** with more than 3 rules, Free keeps them all saved and runs the first 3; you choose which by
   switching rules on and off.
 - **Keep what you paid for:** after a year of subscription you keep a perpetual fallback license for the version
@@ -31,4 +33,4 @@ Everything you need to see your app's traffic is free. Pro is for changing it at
   email [support@neocatcher.com](mailto:support@neocatcher.com).
 
 Licenses are sold and managed by JetBrains Marketplace, which handles payment, invoices and taxes.
-Buy or start the trial from **Settings → Plugins → NeoCatcher**.
+See [how to start the trial, buy and activate a license](trial-and-purchase.md).

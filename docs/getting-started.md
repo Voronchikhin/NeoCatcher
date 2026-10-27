@@ -8,7 +8,8 @@ From zero to your first captured HTTPS request in about five minutes.
 2. Search for **NeoCatcher** and click **Install**, or open the [NeoCatcher page on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35220-neocatcher).
 3. Restart the IDE if asked.
 
-Works in IntelliJ IDEA, Android Studio and other JetBrains IDEs, version 2025.3 or newer (EAP builds included).
+Works in IntelliJ IDEA, Android Studio and other JetBrains IDEs from version 2025.3 up to the current EAP. Each
+release adds the next IDE version once it has been tested with it; update NeoCatcher when you update your IDE.
 
 ## 2. Open the tool window
 
@@ -63,7 +64,8 @@ Click **Connect a Client…** in the Server tab and pick what you want to debug:
 ![The Connect a Client dialog listing Android emulator, Android phone, Java / Kotlin app, Browser, This computer, iPhone and Terminal](assets/media/start-connect-targets.webp){ loading=lazy }
 
 Every flow ends with **Verify**: it waits for a decrypted HTTPS request from your client, so you know the setup
-works. Prefer doing it by hand? See [Device setup](device-setup.md).
+works (keep **Decrypt HTTPS** on in the Server tab for this). Steps you can do without, such as the system proxy,
+offer **Skip**; the others continue with **Next**. Prefer doing it by hand? See [Device setup](device-setup.md).
 
 <video autoplay loop muted playsinline controls poster="../assets/media/easy-setup.webp" width="1680" height="1050"
        aria-label="The Connect a Client wizard sets up an Android emulator in four steps, then the app's HTTPS request appears decrypted in the Request Log">

@@ -45,10 +45,11 @@ conditions:
 | `all` | Every response |
 
 Operators: `equals` and `contains` compare literal text, `glob` matches the whole value (`*` any text, `?` one
-character), `regex` searches the value.
+character), `regex` searches the value. New conditions start with **Glob**: a plain value such as `api.example.com`
+still matches exactly, and you add `*` when you need it (`*.example.com`, `/api/*`).
 
-Modifiers run top to bottom, by category: **URL → Headers → Body → Query** for requests, **Headers → Body → Status**
-for responses.
+Modifiers run top to bottom, by category: **URL → Headers → Body → Query** for requests, **Headers → Body → Status
+→ Delay** for responses.
 
 ## Examples
 
@@ -90,6 +91,49 @@ modifiers:
       updateHostHeader: true
 ```
 
+### Serve a response from a file in your project
+
+Like Charles' *Map Local*: keep mock JSON next to your code, edit it in the IDE, and the next request gets the new
+version. In the Visual editor choose **Set from file** and pick the file; the path is stored relative to the project,
+so the rule works wherever the project is checked out.
+
+```yaml
+name: Orders from a mock file
+conditions:
+  any:
+    - all:
+        - type: url
+          target: path
+          operator: glob
+          value: /api/orders*
+modifiers:
+  body:
+    - action: setFile
+      value: mocks/orders.json
+```
+
+The response keeps its status and headers, including `Content-Type`. If the file can't be read, the response is
+sent unchanged.
+
+### Simulate a slow network
+
+Hold matching responses to see loading states, spinners and timeouts:
+
+```yaml
+name: Slow search
+conditions:
+  any:
+    - all:
+        - type: url
+          target: path
+          operator: glob
+          value: /api/search*
+modifiers:
+  delay:
+    - action: set
+      value: "3000"   # milliseconds, up to 60000
+```
+
 ### Add a debug header to every response
 
 ```yaml
@@ -112,7 +156,9 @@ modifiers:
 | Request | `url` | `setHost`, `setPath`, `setUrl`, `replaceHost`, `replacePath` |
 | Both | `headers` | `add` (keep existing), `update` (replace all with this name), `remove` |
 | Both | `body` | `set` (whole body), `replace` (every occurrence of literal text) |
+| Response | `body` | `setFile` (the whole body from a file; relative paths start at the project directory) |
 | Request | `query` | Change query parameters |
 | Response | `status` | `set` (a code from 100 to 599, quoted) |
+| Response | `delay` | `set` (milliseconds from 0 to 60000, quoted; several delays add up) |
 
 The editor's completion lists every field with its documentation, so you rarely need this table.

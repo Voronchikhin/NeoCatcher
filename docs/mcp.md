@@ -110,7 +110,7 @@ Reading is always available:
 
 | Tool | What it does |
 | --- | --- |
-| `proxy_status` | Proxy state, addresses (127.0.0.1, 10.0.2.2 for emulators), certificate, request counts |
+| `proxy_status` | Proxy state, addresses (127.0.0.1, 10.0.2.2 for emulators), certificate, whether HTTPS is decrypted, request counts |
 | `list_clients` | Apps and devices using the proxy, and whether their HTTPS is decrypted |
 | `list_requests` | Captured calls, newest first; filter by host, path, method, status range, rules applied |
 | `get_exchange` | Headers and bodies of one call, as received and after your rules changed them |
@@ -123,7 +123,7 @@ turn on **Allow agents to change rules, breakpoints and paused responses**. Agen
 
 | Tool | What it does |
 | --- | --- |
-| `create_request_rule`, `create_response_rule` | Add a rule, e.g. "make /api/login return 503" |
+| `create_request_rule`, `create_response_rule` | Add a rule, e.g. "make /api/login return 503", "serve /api/orders from mocks/orders.json", "delay search by 3 s" |
 | `set_rule_active`, `delete_rule` | Turn rules on or off, delete them |
 | `add_response_breakpoint` | Pause matching responses |
 | `resume_paused_response`, `abort_paused_response` | Send a paused response on (edited or not) or fail the call |

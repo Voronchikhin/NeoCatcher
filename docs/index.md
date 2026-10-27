@@ -117,8 +117,8 @@ documentation and inline errors.
 
     ---
 
-    Redirect hosts, change headers, replace bodies, force a status code. Write rules in a form,
-    YAML or JSON with completion and validation.
+    Redirect hosts, change headers, replace bodies, serve a body from a project file, force a status
+    code or slow a response down. Write rules in a form, YAML or JSON with completion and validation.
 
 -   **Response breakpoints**
 
@@ -132,6 +132,7 @@ documentation and inline errors.
     ---
 
     The Connect wizard installs the certificate and routes traffic for emulators, phones, JVM apps and browsers — then verifies it works.
+    Testing a release build? Turn off HTTPS decryption and it keeps working through the proxy.
 
 -   **Works with your AI agent**
 

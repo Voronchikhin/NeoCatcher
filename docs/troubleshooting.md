@@ -8,6 +8,8 @@
 - Android emulator: the proxy host is `10.0.2.2`, not `localhost`.
 - Physical device: use your computer's LAN IP, and check that your firewall allows incoming connections on the port.
 - A VPN on the computer or device can bypass or block the proxy. Turn it off while debugging.
+- HTTPS calls are missing but plain HTTP shows up? **Decrypt HTTPS** is off in the Server tab; HTTPS then passes
+  through unseen.
 
 ## Certificate errors (SSL handshake failed, unknown CA)
 
@@ -16,11 +18,20 @@
 - Android: your app also needs the debug network security config that trusts **user** certificates.
 - JVM: the app must run on the same JDK whose truststore you imported into.
 - Regenerated the certificate? Install the new one everywhere; the old one no longer matches.
+- A release build that must not trust the certificate: turn off **Decrypt HTTPS** in the Server tab, see
+  [Release builds](device-setup.md#release-builds).
 
 ## Only some HTTPS requests fail
 
 The app probably uses **certificate pinning** (for example OkHttp `CertificatePinner`), which rejects any
 certificate except the real server's. Disable pinning in debug builds.
+
+## I can't start the Pro trial (Android Studio)
+
+Android Studio needs the **JetBrains Marketplace Licensing** plugin for paid plugins. Install it from
+**Settings → Plugins → Marketplace** (the Pro notification's **Open Plugins Settings…** takes you there), restart,
+then **Help → Register…**. See
+[Trial and purchase](trial-and-purchase.md).
 
 ## "Could not root your Android Emulator"
 

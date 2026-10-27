@@ -16,7 +16,8 @@ traffic from clients that trust that CA. That is powerful, so treat the certific
 - **Never install the certificate on a shared or production device.** Anyone with the private key could read that
   device's HTTPS traffic.
 - **Don't share the `.jks` / `.p12` files** or commit them to git.
-- **Trust user certificates in debug builds only.** Never ship a release build that does.
+- **Trust user certificates in debug builds only.** Never ship a release build that does. To run a release build
+  through the proxy, turn off **Decrypt HTTPS** instead.
 - **Be careful with what you capture.** The log can contain tokens, cookies and personal data. Clear it when you're
   done, and don't paste it into tickets or chats unredacted.
 

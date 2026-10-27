@@ -55,6 +55,14 @@ config:
 !!! warning
     Keep this in the debug build only. Never ship a release build that trusts user certificates.
 
+### Release builds
+
+A release build doesn't trust the NeoCatcher certificate, so its HTTPS calls fail while HTTPS is decrypted. You don't
+have to change the proxy settings on the device: turn off **Decrypt HTTPS** in the **HTTPS certificate** section of
+the **Server** tab. HTTPS then passes through to the server unseen and the release build works; plain HTTP is still
+shown and changed by rules. Turn it back on for the debug build. Both take effect for new connections at once,
+without a restart.
+
 ## JVM apps (Kotlin, Java, Gradle)
 
 **Connect a Client… → Java / Kotlin app** adds the options below to a run configuration, with a NeoCatcher
