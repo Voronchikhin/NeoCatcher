@@ -60,46 +60,37 @@ copying requests into a chat, ask the agent and it reads them itself:
 
 === "Claude Desktop"
 
-    Claude Desktop starts local commands, so it needs a small bridge to NeoCatcher's HTTP endpoint. Add the server to
-    `claude_desktop_config.json` (**Settings → Developer → Edit Config**), then quit Claude Desktop completely
-    (tray icon → Quit) and start it again.
+    Claude Desktop starts local commands, so it reaches NeoCatcher's HTTP endpoint through a small bridge. Paste the
+    configuration from **Copy Config… → Claude Desktop** into `claude_desktop_config.json` (**Settings → Developer →
+    Edit Config**), then quit Claude Desktop completely (tray icon → Quit) and start it again.
 
-    **With Node.js** — use the configuration from **Copy Config… → Claude Desktop**:
-
-    ```json
-    {
-      "mcpServers": {
-        "neocatcher": {
-          "command": "npx",
-          "args": ["-y", "mcp-remote", "http://127.0.0.1:9950/mcp", "--header", "Authorization:${NEOCATCHER_AUTH}"],
-          "env": { "NEOCATCHER_AUTH": "Bearer <token>" }
-        }
-      }
-    }
-    ```
-
-    **Without Node.js** — download the [Python bridge](downloads/neocatcher_mcp_bridge.py) (standard library
-    only, Python 3.8+) and point Claude Desktop at it:
+    The bridge uses only what the system already has: `sh` and `curl` on macOS and Linux, Windows PowerShell on
+    Windows. Nothing to install, no Node.js or Python. The copied configuration looks like this, with the bridge
+    script in place of `…`; paste it as it is:
 
     ```json
     {
       "mcpServers": {
         "neocatcher": {
-          "command": "C:\\Path\\To\\python.exe",
-          "args": ["C:\\Path\\To\\neocatcher_mcp_bridge.py"],
+          "command": "/bin/sh",
+          "args": ["-c", "…"],
           "env": {
-            "NEOCATCHER_MCP_URL": "http://127.0.0.1:9950/mcp",
-            "NEOCATCHER_MCP_TOKEN": "<token>"
+            "NEOCATCHER_URL": "http://127.0.0.1:9950/mcp",
+            "NEOCATCHER_TOKEN": "<token>"
           }
         }
       }
     }
     ```
 
+    On Windows the command is `powershell.exe` and the script comes in the `NEOCATCHER_BRIDGE` variable. The token stays
+    in the environment, off the command line.
+
 === "Other clients"
 
     Any client that supports the **Streamable HTTP** transport works: URL `http://127.0.0.1:9950/mcp`, header
-    `Authorization: Bearer <token>`. Clients that only start local commands use one of the Claude Desktop bridges.
+    `Authorization: Bearer <token>`. Clients that only start local commands use the Claude Desktop configuration:
+    its `command`, `args` and `env` work in any of them.
 
 The IDE must be open with the project for the agent to reach NeoCatcher. Start the proxy too — otherwise there is no
 traffic to look at.
@@ -162,4 +153,5 @@ After connecting, ask your agent:
 | "Port 9950 is already in use" | Pick another MCP port in the server settings and copy the configuration again. |
 | The agent sees no requests | Start the proxy and send traffic through it — see [Getting started](getting-started.md). |
 | Create/delete tools are missing | Allow changes in the server settings (needs Pro), then reconnect the agent: tools are listed once per connection. `proxy_status` reports `changes_need_pro` when only the license is missing. |
-| Claude Desktop shows no NeoCatcher tools | Quit it completely and restart. Its MCP log (Settings → Developer) shows bridge errors. On Windows, use the configuration with the `NEOCATCHER_AUTH` variable — arguments with spaces break there. |
+| Claude Desktop shows no NeoCatcher tools | Quit it completely and restart. Its MCP log (Settings → Developer) shows why the bridge stopped: *not reachable* means the IDE or the MCP server is off; *refused the request* means the token or port changed, so copy the configuration again. |
+| Claude Desktop logs "Failed to spawn process" | The configuration was copied from NeoCatcher 1.0.2 or earlier and runs `npx`, which needs Node.js. Copy the configuration again from 1.0.3 or later. |

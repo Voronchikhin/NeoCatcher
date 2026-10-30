@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.0.3 — 2026-10-30
+
+### Changed
+
+- The Request Log keeps the latest 10,000 calls, with at most a tenth of the IDE's memory for bodies; the oldest calls
+  make room for new ones. See [Request log](request-log.md#clearing-the-log).
+- Claude Desktop no longer needs Node.js to reach the MCP server. The configuration NeoCatcher copies for it uses only
+  what the system already has (`sh` and `curl` on macOS and Linux, PowerShell on Windows). If Claude Desktop reports
+  "Failed to spawn process", copy the configuration again. See [AI agents (MCP)](mcp.md).
+
+### Fixed
+
+- Memory no longer grows during long sessions. Each logged body is stored once unless a rule changed it, and the proxy
+  no longer keeps its own second copy of recent traffic.
+- Calls to a server that can't be reached or never answers no longer stay **Pending** forever and no longer hold
+  memory: once the proxy gives up (after about two minutes) they show as **No response**, and MCP reports them as
+  `no_response`.
+
 ## 1.0.2 — 2026-10-27
 
 ### Added
